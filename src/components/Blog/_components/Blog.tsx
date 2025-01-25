@@ -1,6 +1,7 @@
 import { getPosts } from "@/actions";
 import BlogCard from "./BlogCard";
 import Searchbar from "./Searchbar";
+import { PostType } from "@/types";
 
 export default  async function Blog({query}:{query?:string}){
     const posts = await getPosts();
@@ -12,7 +13,7 @@ export default  async function Blog({query}:{query?:string}){
             <Searchbar  query={query} />
             <ul className="grid grid-cols-3 gap-6 md:gap-[20px] ">
                 {posts?.length > 0 ?(
-                    posts.map((post, idx:number) => (
+                    posts.map((post:PostType, idx:number) => (
                         <BlogCard
                          post={post}
                          key={idx}

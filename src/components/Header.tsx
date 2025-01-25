@@ -1,3 +1,6 @@
+'use client';
+
+
 import { navItems } from "@/constants";
 import Link from "next/link";
 import Logo from "./Logo";
@@ -9,7 +12,10 @@ export default function Header (){
         <header className="flex flex-col">
             <div className="flex items-center p-2 justify-between border-b-[#DDD0DA] border">
                 <Logo />
-                <MenuBtn  className='md:hidden'/>
+                <MenuBtn
+                className='md:hidden'
+                onClick={() => alert('')}
+                  />
                 <div className="hidden md:flex items-center  gap-3">
                     <Button 
                     icon={

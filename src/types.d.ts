@@ -1,14 +1,16 @@
-export type RootState = {
-    currentStroke:Stroke
-    strokes:Stroke[]
-    historyIndex:number
+type PostType = {
+  cover_image:string,
+  social_image:string,
+  tag_list:string,
+  id:number,
+  title:string,
+  description:string,
+  readable_publish_date:string,
+ 
+
 }
 
-export type Stroke = {
-    points:Point[]
-    color:string
-}
-export type Point = { 
-    x:number
-    y:number
+
+export {
+    PostType,
 }

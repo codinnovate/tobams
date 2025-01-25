@@ -1,13 +1,14 @@
+import { PostType } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function BlogCard({post}:{post:any}){
+export default function BlogCard({post}:{post:PostType}){
     return (
         <div className="flex flex-col gap-6 my-[2em] max-w-[327px] w-full md:max-w-[424px] rounded-t-[8px] ">
         <div className="relative">
             <div className="opacity-25 bg-black absolute top-0 bottom-0 right-0 left-0" />
             <Image 
-            src={post?.cover_image || post?.social_image}  
+            src={post.cover_image || post.social_image}  
             alt='' 
             width={327}
             height={300}
