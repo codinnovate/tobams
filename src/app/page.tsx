@@ -1,10 +1,12 @@
 import { Blog, Footer, Header, Hero, NewsLetter } from "@/components";
-export default function HomPage(){
+export default function HomPage({searchParams}: {searchParams: {query?: string}}) {
+  const query = searchParams.query;
+
   return (
-    <main className="flex flex-col gap-[56px]">
-      <Header />
+    <main className="flex flex-col">
       <Hero />
-      <Blog />
+      <Blog  
+      query={query}/>
       <NewsLetter />
       <Footer />
     </main>

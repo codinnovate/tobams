@@ -6,7 +6,7 @@ import Button from "./ui/Button";
 
 export default function Header (){
     return (
-        <header className="flex flex-col ">
+        <header className="flex flex-col">
             <div className="flex items-center p-2 justify-between border-b-[#DDD0DA] border">
                 <Logo />
                 <MenuBtn  className='md:hidden'/>

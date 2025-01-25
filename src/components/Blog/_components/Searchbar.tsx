@@ -1,7 +1,15 @@
-export default function Searchbar(){
+import Form from "next/form";
+
+export default function Searchbar({query}:{query?:string}){
     return (
-        <section>
-        
-        </section>
+        <Form action="/" scroll={false} >
+            <input
+             name="query"
+             defaultValue={query}
+             className=""
+             placeholder="Search Startups"
+            />
+
+        </Form>
     )
 }
