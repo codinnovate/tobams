@@ -1,4 +1,4 @@
-
+import './globals.css';
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -7,9 +7,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <Provider store={store}>
         {children}
-      </Provider>
       </body>
     </html>
   );
