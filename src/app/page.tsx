@@ -8,7 +8,6 @@ export default async function HomPage({searchParams}:{searchParams:Promise<{quer
       <Blog  
       query={query}/>
       <NewsLetter />
-      <Footer />
     </main>
   )
 }
