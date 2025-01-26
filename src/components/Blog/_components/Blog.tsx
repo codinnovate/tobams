@@ -24,7 +24,6 @@ export default  async function Blog({query}:{query?:string}){
                     <p>No Blog Post(s) Found!</p>
                 )}
             </ul>
-            {/* <BlogCards /> */}
         
         </section>
     )
